@@ -1,18 +1,20 @@
-import { Auth } from '@supabase/ui'
+import { Button } from '@supabase/ui';
+import Link from 'next/link';
 
 export default function IndexPage() {
-  const { user } = Auth.useUser()
-
   return (
     <div className="w-full h-full bg-gray-300">
-      <div>
-        navigators
-        {!user ? (
-          <p>create pride proflle with login</p>
-        ) : (
-          <p>move page to select profile's category</p>
-        )}
-      </div>
+      <h1>Pride Profile</h1>
+      <p>Create Your Own Pride Profile!</p>
+      <Button>
+        <Link href='/'>
+          Sign In
+        </Link>
+
+      </Button>
+      <Button>
+        Create Profile
+      </Button>
     </div>
   )
 }
