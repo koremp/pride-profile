@@ -11,3 +11,7 @@
 
 You can create personal profile and save it to your device!
 If you login to this app, you can manage multiple profiles at same time, and also access to your profile history.
+
+## setting `.eslint.json`
+
+<https://andrebnassis.medium.com/setting-eslint-on-a-react-typescript-project-2021-1190a43ffba>
