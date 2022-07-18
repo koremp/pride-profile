@@ -1,13 +1,13 @@
-const nextJest = require('next/jest')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const nextJest = require('next/jest');
 
-const createJestConfig = nextJest({ dir: './' })
+const createJestConfig = nextJest({ dir: './' });
 
 const customJestConfig = {
-  setupFiles: ["<rootDir>/setEnvVars.js"],
   setupFilesAfterEnv: [
     '<rootDir>/jest.setup.js',
     'given2/setup',
-    'jest-plugin-context/setup'
+    'jest-plugin-context/setup',
   ],
   collectCoverage: true,
   // on node 14.x coverage provider v8 offers good speed and more or less good report
@@ -31,7 +31,7 @@ const customJestConfig = {
 
     // Handle image imports
     // https://jestjs.io/docs/webpack#handling-static-assets
-    '^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
+    '^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': '<rootDir>/__mocks__/fileMock.js',
 
     // Handle module aliases
     '^@/components/(.*)$': '<rootDir>/components/$1',
@@ -58,6 +58,6 @@ const customJestConfig = {
       statements: 100,
     },
   },
-}
+};
 
-module.exports = createJestConfig(customJestConfig)
+module.exports = createJestConfig(customJestConfig);
