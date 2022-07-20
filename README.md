@@ -24,3 +24,5 @@ If you login to this app, you can manage multiple profiles at same time, and als
 * eslint config
 * codeceptjs
 * e2e
+
+### <https://github.com/sex-request/nextjs-starter-kit>
