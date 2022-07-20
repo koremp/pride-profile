@@ -15,14 +15,14 @@ describe('IndexPage', () => {
   });
 
   it('renders "Sign in" button', () => {
-    const { getByRole } = renderIndexPage();
+    const { getByText } = renderIndexPage();
 
-    expect(getByRole('button').innerHTML).toContain('Sign In');
+    expect(getByText('Sign In')).not.toBeNull();
   });
 
   it('renders "Create Profile" button', () => {
-    const { getByRole } = renderIndexPage();
+    const { getByText } = renderIndexPage();
 
-    expect(getByRole('button').innerHTML).toContain('Create Profile');
+    expect(getByText('Sign In')).not.toBeNull();
   });
 });
