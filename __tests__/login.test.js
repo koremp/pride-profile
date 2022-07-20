@@ -1,7 +1,7 @@
-import { render } from '@testing-library/react'
+import { render } from '@testing-library/react';
 
-import LoginPage from '@/pages/login'
+import LoginPage from '@/pages/login';
 
 test('LoginPage', () => {
-  render(<LoginPage />)
-})
+  render(<LoginPage />);
+});
