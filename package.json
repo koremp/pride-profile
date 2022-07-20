@@ -6,10 +6,10 @@
     "build": "next build",
     "start": "next start",
     "test:unit": "jest",
-    "coverage": "yarn run test:unit -- --coverage",
+    "coverage": "npm run test:unit -- --coverage",
     "test:e2e": "codeceptjs run --steps",
-    "test": "yarn run coverage && start-server-and-test start http://localhost:80808 test:e2e",
-    "clean": "rm yarn.lock & rm -rf node_modules/ dist/ .next/"
+    "test": "npm run coverage && start-server-and-test start http://localhost:80808 test:e2e",
+    "clean": "rm yarn.lock package-lock.json & rm -rf node_modules/ dist/ .next/"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
