@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install
-        run: yarn ci
+        run: npm ci
       - name: Test
-        run: yarn test
+        run: npm test
         env:
           HEADLESS: true
       - name: Lint
-        run: yarn run lint
+        run: npm run lint
