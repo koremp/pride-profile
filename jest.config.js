@@ -14,6 +14,7 @@ const customJestConfig = {
   ],
   testMatch: [
     '<rootDir>/__tests__/*.+(spec|test).(ts|js)?(x)',
+    '<rootDir>/__tests__/**/*.+(spec|test).(ts|js)?(x)',
     '<rootDir>/src/**/?(*.)+(spec|test).[jt]s?(x)',
   ],
   setupFilesAfterEnv: [
