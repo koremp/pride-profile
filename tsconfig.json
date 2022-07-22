@@ -17,6 +17,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "rootDir": ".",
+    "baseUrl": ".",
     "moduleResolution": "node",
     "types": [
       "jest"
