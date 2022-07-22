@@ -1,7 +1,7 @@
 import { Auth } from '@supabase/ui';
 import { supabase } from '../lib/initSupabase.js';
 
-export default function LoginPage(): JSX.Element {
+export default function Login(): JSX.Element {
   const { user } = Auth.useUser();
 
   return (

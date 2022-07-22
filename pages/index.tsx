@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function IndexPage(): JSX.Element {
+export default function Index(): JSX.Element {
   return (
     <div>
       <h1>Pride Profile</h1>
