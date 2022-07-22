@@ -38,13 +38,18 @@ const customJestConfig = {
 
     // Handle module aliases
     // '^@/components/(.*)$': '<rootDir>/components/$1',
-    '^@/pages/(.*)$': '<rootDir>/pages/$1',
+
     '^__tests__/(.*)$': '<rootDir>/__tests__/$1',
+    '^pages/(.*)$': '<rootDir>/pages/$1',
     '^src/(.*)$': '<rootDir>/src/$1',
   },
   // Add more setup options before each test is run
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
+  testPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/.next/',
+    '<rootDir>/.yarn/'
+  ],
   transform: {
     // Use babel-jest to transpile tests with the next/babel preset
     // eslint-disable-next-line max-len
