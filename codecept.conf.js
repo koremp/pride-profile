@@ -20,7 +20,7 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
-  name: 'assignment-7-1',
+  name: 'pride-profile',
   plugins: {
     retryFailedStep: {
       enabled: true,
