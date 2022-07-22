@@ -4,7 +4,7 @@
 
 * Next.js
 * React.js
-* tailwind
+* Material UI
 * Supabase
 
 ## How To Use
