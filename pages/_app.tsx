@@ -1,13 +1,15 @@
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import { Auth } from '@supabase/ui';
 import { AppProps } from 'next/app.js';
 import Head from 'next/head.js';
-import { supabase } from '../lib/initSupabase.js';
-import CssBaseline from '@mui/material/CssBaseline';
+import { RecoilRoot } from 'recoil';
+
 
 import theme from 'src/theme';
 import createEmotionCache from 'src/createEmotionCache';
+import { supabase } from '../lib/initSupabase.js';
 
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -36,11 +38,11 @@ export default function MyApp(props: MyAppProps): JSX.Element {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Auth.UserContextProvider supabaseClient={supabase}>
-          <Component {...pageProps} />
+          <RecoilRoot>
+            <Component {...pageProps} />
+          </RecoilRoot>
         </Auth.UserContextProvider>
       </ThemeProvider>
-
     </CacheProvider>
-
   );
 }
