@@ -5,6 +5,7 @@
 * Next.js
 * React.js
 * Material UI
+* Recoil
 * Supabase
 
 ## How To Use
